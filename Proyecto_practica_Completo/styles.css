@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /*Define la fuente*/
+    margin: 0; /* Elimina el margen por defecto del body*/
+    padding: 0; /* Elimina el padding por defecto del body*/
+    background-color: #f0f0f0; /*Color del fondo*/
+    color: #333; /*Color de letra*/
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #1a5f7a;/*Color de fondo azul oscuro*/
+    color: white; /*Color de letra*/
+    padding: 20px 0; /*Esapciado verticial de 20px*/
+    text-align: center; /*Centra el texto*/
+}
+
+header h1 {
+    margin: 0;  /* Elimina el margen por defecto del encabezado h1 */
+    font-size: 2.5em;  /* Define un tamaño de fuente grande para el encabezado */
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    margin-top: 20px; /* Añade un margen superior de 20px */
+}
+
+nav ul li {
+    display: inline;  /* Muestra los elementos de la lista en línea en este caso horizontalmente */
+    margin: 0 15px; /* Establece un margen horizontal de 15px entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: white; /* Define el color del texto de los enlaces como blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: bold;  /* Hace que el texto del enlace sea negrita */
+    transition: color 0.3s ease;  /* Añade una transición suave al color del enlace cuando cambia */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Cambia el color del texto del enlace a dorado cuando se pasa el mouse sobre él */
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px; /* Aplica un espaciado de 20px alrededor del contenido principal */
+    max-width: 1200px; /* Establece un ancho máximo de 1200px para el contenido principal */
+    margin: 0 auto; /* Centra el contenido principal horizontalmente */
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 40px; /* Establece un margen inferior de 40px entre secciones */
+    padding: 20px; /* Aplica un espaciado de 20px dentro de cada sección */
+    background-color: white;  /* Establece un fondo blanco para las secciones */
+    border-radius: 8px; /* Redondea los bordes de las secciones */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil a las secciones para darles profundidad */
+}
+
+section h2 {
+    color: #1a5f7a; /* Define el color del texto de los encabezados de sección como azul oscuro */
+    border-bottom: 2px solid #1a5f7a; /* Añade una línea inferior de 2px de grosor en el mismo color */
+    padding-bottom: 10px; /* Aplica un espaciado inferior de 10px al encabezado de la sección */
+}
+
+/* Estilos de imágenes */
+img {
+    max-width: 100%;  /* Asegura que las imágenes no excedan el ancho de su contenedor */
+    height: auto;  /* Mantiene la proporción de las imágenes */
+    display: block; /* Muestra la imagen como un bloque */
+    margin: 20px auto;  /* Aplica un margen de 20px arriba y abajo y centra la imagen horizontalmente */
+    border-radius: 8px;  /* Redondea los bordes de las imágenes */
+}
+
+/* Estilos de tablas */
+table {
+    width: 100%; /* Establece que la tabla ocupe el 100% del ancho de su contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas de la tabla */
+    margin-top: 20px;  /* Añade un margen superior de 20px a la tabla */
+}
+/* Estilos para las celdas de la tabla */
+th, td {
+    border: 1px solid #ddd;  /* Bordes de las celdas con un color gris claro */
+    padding: 12px;  /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+/* Estilos específicos para los encabezados de la tabla */
+th {
+    background-color: #1a5f7a; /* Color de fondo para los encabezados */
+    color: white; /* Color del texto en los encabezados */
+}
+/* Estilo para las filas pares de la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo gris claro para filas pares */
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 20px 0; /* Espaciado interno en la parte superior e inferior */
+    background-color: #1a5f7a; /* Color de fondo del pie de página */
+    color: white; /* Color del texto en el pie de página */
+}
+.columnas {
+    display: flex; /* Utiliza flexbox para el diseño de columnas */
+    justify-content: space-between; /* Espacia las columnas uniformemente */
+    margin-top: 20px; /* Margen superior para separar de otros elementos */
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+    padding: 15px; /* Espaciado interno en las columnas */
+    border: 1px solid #ccc; /* Bordes de las columnas con un color gris claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
